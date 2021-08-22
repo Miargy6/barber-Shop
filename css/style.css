@@ -1,0 +1,282 @@
+
+/*Reset*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root{
+  --pri: #fff;
+  --sec: #ffcc41;
+  --ter: #000;
+  --font: zapfino;
+}
+h1{
+  font-size: 8rem;
+}
+h2{
+  font-size: 6rem;
+}
+h3, h4{
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+h4{
+  font-size: 1.1rem;
+  word-spacing: 0.4vw;
+}
+h6{
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--pri);
+}
+p{
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+button{
+  background: var(--ter);
+  border-style: none;
+  padding: 0.7rem 1.3rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #fff;
+  outline: none;
+}
+table tr td{
+  height: 3px;
+  background-color: var(--ter);
+}
+
+a{
+  text-decoration: none;
+}
+body{
+  font-family: Poppins;
+}
+
+/*---------------- Home Page----------------*/
+footer .links li a{
+  color: var(--pri);
+}
+footer .links h4{
+  letter-spacing: 0.3rem;
+  color: var(--sec);
+}
+
+footer .links li a:hover{
+  color: var(--sec);
+}
+footer .copyright{
+  font-size: 0.9rem;
+}
+footer .copyright p{
+  font-size: 0.9rem;
+  margin: 0.5rem auto 0;
+}
+
+/* Nav Bar */
+
+@media (min-width: 990px) {
+  header nav .text-nav-left{
+    display: inline-flex;
+    justify-content: flex-end;
+  }
+  header nav .text-nav-right{
+    display: inline-flex;
+    justify-content: flex-start;
+  }
+  #carouselExampleCaptions .carousel-caption a button{
+    padding: 8px 16px;
+    width: 160px;
+    height: 50px;
+    font-size: 1.25rem;
+  }
+}
+header nav{
+  background-color: #000;
+}
+
+header nav a{
+  margin: auto 1.4rem;
+  font-size: 1rem;
+  font-family: var(--font);
+}
+
+/* Banner*/
+
+#carouselExampleCaptions{
+  position: relative;
+}
+
+#carouselExampleCaptions .carousel-indicators{
+  position: absolute;
+  display: block;
+  width: 5%;
+  height: 20%;
+  right: 0;
+  top: 45%;
+  left: 95%;
+  padding: 0;
+  margin: 0;
+}
+
+#carouselExampleCaptions .carousel-indicators button:nth-child(1){
+  width: 2.8rem;
+  float: right;
+  height: 8%;
+}
+#carouselExampleCaptions .carousel-indicators button:nth-child(2){
+  width: 3.5rem;
+  float: right;
+  height: 8%;
+}
+#carouselExampleCaptions .carousel-indicators button:nth-child(3){
+  width: 4.2rem;
+  float: right;
+  height: 8%;
+}
+#carouselExampleCaptions .carousel-indicators button:nth-child(4){
+  width: 4.9rem;
+  float: right;
+  height: 8%;
+}
+
+#carouselExampleCaptions .carousel-indicators .active{
+  background-color: var(--sec);
+}
+
+#carouselExampleCaptions .carousel-control-prev span, #carouselExampleCaptions .carousel-control-next span{
+  color: transparent;
+  background: transparent;
+}
+
+#carouselExampleCaptions .carousel-item img{
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  box-sizing: border-box;
+  object-fit: cover;
+}
+
+#carouselExampleCaptions .carousel-caption{
+position: absolute;
+background-color: rgba(0, 0, 0, 0.5);
+width: 100%;
+height: 100%;
+bottom: 0;
+left: 0;
+}
+
+#carouselExampleCaptions .carousel-caption .carousel-caption-text{
+  position: absolute;
+  width: 45%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#carouselExampleCaptions .carousel-caption h5{
+  font-size: 2rem;
+  color: var(--sec);
+  margin-bottom: 1.7rem;
+}
+#carouselExampleCaptions .carousel-caption h4{
+  font-size: 2.5rem;
+  color: var(--pri);
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+#carouselExampleCaptions .carousel-caption h4 span{
+color: var(--sec);
+}
+
+#carouselExampleCaptions .carousel-caption p{
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  letter-spacing: 0.1rem;
+
+}
+
+#carouselExampleCaptions .carousel-caption a button{
+  color: var(--ter);
+  background-color: var(--sec);
+  border-radius: 0;
+  outline: none;
+  border: none;
+  font-weight: 450;
+}
+
+#our-service{
+  background-color: var(--ter);
+}
+
+#our-service .title-text{
+  text-align: center;
+  padding: 2% 30%;
+  position: relative;
+}
+#our-service .title-text h4{
+  font-family: var(--font);
+  font-size: 2rem;
+  margin-bottom: 5%;
+  position: relative;
+  text-align: center;
+}
+#our-service .title-text h4 table{
+position: absolute;
+left: 25%;
+}
+
+#our-service .title-text p{
+  font-size: 1.2rem;
+  height: 60%;
+  padding: 5% auto;
+}
+
+#our-service .hair-types{
+  margin: auto 0;
+  padding: auto 50%;
+  
+}
+#our-service .hair-types img{
+  width: 80%;
+  border-radius: 50%;
+}
+
+#our-products-price{
+  position: relative;
+}
+
+#our-products-price #product-price-img{
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+}
+#our-products-price .title-text{
+  text-align: center;
+  padding: 2% 30%;
+  position: relative;
+}
+#our-products-price .title-text h4{
+  font-family: var(--font);
+  font-size: 2rem;
+  margin-bottom: 5%;
+  position: relative;
+  text-align: center;
+}
+#our-products-price .title-text h4 table{
+position: absolute;
+left: 15%;
+}
+
+#our-products-price .title-text p{
+  font-size: 1.2rem;
+  height: 60%;
+  padding: 5% auto;
+}
